@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Neil Kale"
 title_separator          : "-"
 name                     : &name "Neil Kale"
-description              : &description "Undergraduate student at Worcester Polytechnic Institute"
+description              : &description "Undergraduate researcher at Harvard Medical School"
 url                      : https://neilkale.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "neilkale/neilkale.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Neil Kale"
   avatar           : "profile.png"
-  bio              : "Exploring AI for healthcare."
+  bio              : "Undergraduate researcher at Harvard Medical School, exploring AI for healthcare."
   location         : "Worcester, MA"
   employer         :
   pubmed           :
@@ -209,15 +209,15 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+  # # _teaching
+  # - scope:
+  #     path: ""
+  #     type: teaching
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comments: true
   # _publications
   - scope:
       path: ""
@@ -227,23 +227,23 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+  # # _portfolio
+  # - scope:
+  #     path: ""
+  #     type: portfolio
+  #   values:
+  #     layout: single
+  #     author_profile: true
+  #     share: true
+  #     comment: true
+  # # _talks
+  # - scope:
+  #     path: ""
+  #     type: talks
+  #   values:
+  #     layout: talk
+  #     author_profile: true
+  #     share: true
 
 # Sass/SCSS
 sass:

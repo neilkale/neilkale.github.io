@@ -20,6 +20,6 @@ Background
 ======
 I've conducted research at Dr. David Kwiatkowski's lab at Harvard Medical School for 3 years. I started with working on data processing and biostatistics, and since then, I've become more interested in machine learning and AI.
 
-My work from 2021 is published in Journal of Clinical Oncology and can be accessed [here](https://ascopubs.org/doi/10.1200/JCO.2022.40.16_suppl.2622)! And our full paper was recently accepted for publication in the prestigious journal Cancer Cell.
+My work from 2021 is published [here](https://ascopubs.org/doi/10.1200/JCO.2022.40.16_suppl.2622)! And our full paper was recently accepted in the prestigious journal Cancer Cell.
 
 This summer, I analyzed RNA sequencing data to investigate biomarkers for neoadjuvant immunotherapy in lung cancer. You can read more about that project in [my portfolio](https://neilkale.github.io/portfolio/).

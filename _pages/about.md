@@ -18,8 +18,8 @@ I'm broadly interested in how we can apply machine learning to challenging tasks
 
 Background
 ======
-I've conducted research at Dr. David Kwiatkowski's lab at Harvard Medical School for 3 years. I started off working on data processing and biostatistics, and since then, I've become more interested in machine learning and AI.
+I've conducted research at Dr. David Kwiatkowski's lab at Harvard Medical School for 3 years. I started with working on data processing and biostatistics, and since then, I've become more interested in machine learning and AI.
 
-My work from 2021 is published [here](https://neilkale.github.io/publication/2022-06-01-cdkn2a-mtap)! And our full paper was recently accepted in Cancer Cell.
+My research from 2021 has been published and can be accessed [here](https://ascopubs.org/doi/10.1200/JCO.2022.40.16_suppl.2622)! In addition, our comprehensive paper has recently been accepted for publication in the prestigious journal Cancer Cell.
 
-This summer, I analyzed RNA sequencing data to explore immune response to neoadjuvant immunotherapy in lung cancer. You can read more about that project in [my portfolio](https://neilkale.github.io/portfolio/).
+This summer, I analyzed RNASeq and whole-exome sequencing data to investigate biomarkers for neoadjuvant immunotherapy in lung cancer. You can read more about that project in [my portfolio](https://neilkale.github.io/portfolio/).

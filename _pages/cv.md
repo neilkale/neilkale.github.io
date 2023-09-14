@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * B.S. in Computer Science, Worcester Polytechnic Institute, 2024 (expected)
-* B.S. in Mathematical Science, Worcester Polytechnic Institute, 2024 (expected)
+* B.S. in Mathematical Sciences, Worcester Polytechnic Institute, 2024 (expected)
 
 Work experience
 ======
@@ -53,4 +53,4 @@ Publications
 
 Service and leadership
 ======
-* Team manager for the 46 athletes on the men's varsity crew team.
+* Team manager for 46 athletes on the men's varsity crew team.

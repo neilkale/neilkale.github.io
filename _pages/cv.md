@@ -18,7 +18,7 @@ Work experience
 ======
 * Summer 2023: Research Assistant
   * Harvard Medical School
-  * Duties included: Exploring transcriptomics data
+  * Duties included: Analyzing transcriptomics data
   * Supervisor: Dr David Kwiatkowski
 
 Skills

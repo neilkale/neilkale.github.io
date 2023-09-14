@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I'm a student-researcher-athlete in my final year at Worcester Polytechnic Institute and interested in using technology to better people's health. My research is primarily associated with Harvard Medical School and Brigham and Women's Hospital, where I am involved in genomic data analysis and machine learning for cancer. At college, I'm pursuing a double major in computer science and mathematics, and I row for the men's varsity crew team!
+Hello! I'm a student-researcher-athlete in my final year at Worcester Polytechnic Institute. I am interested in using technology to better people's health. My research is primarily associated with Harvard Medical School and Brigham and Women's Hospital, where I am involved in genomic data analysis and machine learning for cancer. At college, I'm pursuing a double major in computer science and mathematics, and I row for the men's varsity crew team.
 
-Research I've done
+My research interests
 ======
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
 1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right.

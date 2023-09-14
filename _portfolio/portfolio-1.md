@@ -1,6 +1,6 @@
 ---
 title: "Elevated CD4+ memory T-cells enable immune response to neoadjuvant atezolizumab in non-squamous NSCLC"
-excerpt: "My summer research from 2023 uses statistical analysis, GSEA, and TIMER2 immune deconvolution to investigate immune response. <br/><img src='/images/500x300.png'>"
+excerpt: "My summer research from 2023 uses statistical analysis, GSEA, and TIMER2 immune deconvolution to investigate immune response. <br/><img src='/images/portfolio_atezo.png'>"
 collection: portfolio
 ---
 

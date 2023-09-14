@@ -18,4 +18,8 @@ I'm broadly interested in how we can apply machine learning to challenging tasks
 
 Background
 ======
-I've conducted research at Harvard Medical School for 3 years. You can read more about my projects in [my portfolio](https://neilkale.github.io/portfolio/).
+I've conducted research at Dr. David Kwiatkowski's lab at Harvard Medical School for 3 years. I started off working on data processing and biostatistics, and since then, I've become more interested in machine learning and AI.
+
+My work from 2021 is published [here](https://neilkale.github.io/publication/2022-06-01-cdkn2a-mtap)! And our full paper was recently accepted in Cancer Cell.
+
+This summer, I analyzed RNA sequencing data to explore immune response to neoadjuvant immunotherapy in lung cancer. You can read more about that project in [my portfolio](https://neilkale.github.io/portfolio/).

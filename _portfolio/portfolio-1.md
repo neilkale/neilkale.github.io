@@ -6,6 +6,6 @@ collection: portfolio
 
 {% include base_path %}
 
-Text
+Summary
 -----
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML.
+This research focused on analyzing transcriptomic data from 180 non small-cell lung cancer patients treated with a PD-L1 blocking immunotherapy. We identified 214 genes associated with major pathologic response in patients with lung adenocarcinoma, including 85 genes indicative of immune cell presence. Immune deconvolution via TIMER2 and Spearman correlation analysis identified two immune cell subtypes associated with response: CD4+ memory-activated T cells and M1 macrophages. Future work will involved corroborating these results in the OAK and POPLAR lung cancer datasets, and investigating CD4+ and M1 macrophage expression in the single-cell RNA sequencing data from this study.

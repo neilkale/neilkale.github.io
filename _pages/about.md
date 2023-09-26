@@ -14,7 +14,7 @@ My research is primarily associated with Harvard Medical School and Brigham and 
 
 Research interests
 ======
-I'm broadly interested in how we can apply machine learning to challenging tasks like drug discovery and identifying genetic biomarkers.
+I'm broadly interested in developing better machine learning algorithms for challenging tasks like drug discovery and identifying genetic biomarkers.
 
 Background
 ======

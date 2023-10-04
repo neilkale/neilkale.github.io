@@ -1,13 +1,15 @@
 ---
 title: "Dynamical systems approaches for deep learning"
-excerpt: "My undergraduate senior thesis develops a novel framework for designing neural networks as iterative matrix multiplications. <br/><img src='/images/portfolio_inn.png'>"
+excerpt: "My undergraduate senior thesis (2023) develops a novel framework for designing neural networks as iterative matrix multiplications. <br/><img src='/images/portfolio_inn.png'>"
 collection: portfolio
 ---
 
 Summary
 -----
-This research explores a reframing of deep neural networks as iterative sparse matrix multiplications. With this novel approach, I am working on bleeding-edge recurent neural networks capable of competing with transformer models on long-range memory tasks whilst being more explainable. Currently, I am reproducing Simple Recurrent Units (Lei et al., 2017) as iterative neural networks with the eventual goal of improving their performance.
+Under the supervision of Professor Randy Paffenroth, my senior thesis explores a totally new framework for deep learning. Rooted in dynamical systems theory, our 'iterative neural networks' (INNs) transform opaque deep learning architectures like LSTMs and transformers into simple iterative matrix multiplications. The resulting models are mathematically equivalent, but more interpretable and easier to finetune.
+
+My goal is to prove that, in many cases, these matrix models can be uniquely finetuned to train faster than layered models and achieve equivalent, and even higher, accuracy with fewer parameters. Currently, I am reworking the Simple Recurrent Unit (Lei et al., 2017) into an INN with the eventual goal of 10x-ing the model's performance through careful finetuning.
 
 <img src='/images/portfolio_inn.png'>
 
-Figure. A two-layer multilayer perceptron (MLP) represented as a 3x3 iterative neural network. The SRU model is represented by a more complicated 14x14 INN.
+Figure. A two-layer multilayer perceptron (MLP) represented as a 3x3 iterative neural network. The SRU model is represented by a much sparser 14x14 INN.

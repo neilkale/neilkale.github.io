@@ -24,4 +24,4 @@ My work from 2022 is published in Journal of Clinical Oncology and can be access
 
 This summer, I analyzed RNA sequencing data to investigate biomarkers for neoadjuvant immunotherapy in lung cancer. You can read more about that project in [my portfolio](https://neilkale.github.io/portfolio/portfolio-1/).
 
-Now, I am developing a new framework for deep learning with Professor Randy Paffenroth at WPI. Our work is rooted in dynamical systems theory, and aims to build more explainable, finetunable AI. See [my portfolio](https://neilkale.github.io/portfolio/portfolio-2/) to learn more.
+For my senior thesis, I am developing a new deep learning framework with Professor Randy Paffenroth at WPI. Our work aims to build more explainable and finetunable neural networks. See [my portfolio](https://neilkale.github.io/portfolio/portfolio-2/) to learn more.

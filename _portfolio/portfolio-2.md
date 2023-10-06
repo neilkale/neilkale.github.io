@@ -6,9 +6,9 @@ collection: portfolio
 
 Summary
 -----
-Under the supervision of Professor Randy Paffenroth, my senior thesis explores a totally new framework for deep learning. Rooted in dynamical systems theory, our 'iterative neural networks' (INNs) transform opaque deep learning architectures like LSTMs and transformers into simple iterative matrix multiplications. The resulting models are mathematically equivalent, but more interpretable and easier to finetune.
+Under the supervision of Professor Randy Paffenroth, my senior thesis explores a new framework for deep learning rooted in dynamical systems theory. These 'iterative neural networks' (INNs) transform opaque architectures, such as LSTMs and transformers, into simple iterative matrix multiplications. The resulting models are mathematically equivalent, but more interpretable and easier to finetune.
 
-My goal is to prove that, in many cases, these matrix models can be uniquely finetuned to train faster than layered models and achieve better accuracy with fewer parameters. Currently, I am reworking the Simple Recurrent Unit (Lei et al., 2017) into an INN with the eventual goal of 10x-ing the model's performance through careful finetuning.
+My goal is to prove that, in many cases, these matrix models can be uniquely finetuned to train faster than layered models and achieve better accuracy with fewer parameters. Currently, I am reworking the Simple Recurrent Unit (Lei et al., 2017) into an INN with the eventual goal of significantly improving the model's performance through careful finetuning.
 
 <img src='/images/portfolio_inn.png'>
 

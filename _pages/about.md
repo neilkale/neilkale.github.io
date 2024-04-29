@@ -26,4 +26,4 @@ Last summer, I analyzed RNA sequencing data to investigate biomarkers for neoadj
 
 For my senior thesis, I developed a new deep learning framework with Professor Randy Paffenroth at WPI. Our work aims to build more interpretable and finetunable neural networks. See [my portfolio](https://neilkale.github.io/portfolio/portfolio-2/) to learn more.
 
-This summer, I am working at GoDaddy Inc as a Machine Learning Scientist Intern. I will be developing a Large Language Model (LLM) chatbot with Retrieval Augmented Generation (RAG) to provide customer support.
+<!-- This summer, I am working at GoDaddy Inc as a Machine Learning Scientist Intern. I will be developing a Large Language Model (LLM) chatbot with Retrieval Augmented Generation (RAG) to provide customer support. -->

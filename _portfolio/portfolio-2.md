@@ -1,14 +1,12 @@
 ---
 title: "Dynamical systems approaches for deep learning"
-excerpt: "My undergraduate senior thesis (2023) develops a novel framework for designing neural networks as iterative matrix multiplications. <br/><img src='/images/portfolio_inn.png'>"
+excerpt: "My undergraduate senior thesis submitted in 2024 reimagines neural network designs as discrete dynamical systems. <br/><img src='/images/portfolio_inn.png'>"
 collection: portfolio
 ---
 
 Summary
 -----
-Under the supervision of Professor Randy Paffenroth, my senior thesis explores a new framework for deep learning rooted in dynamical systems theory. These 'iterative neural networks' (INNs) transform opaque architectures, such as LSTMs and transformers, into simple iterative matrix multiplications. The resulting models are mathematically equivalent, but more interpretable and easier to finetune.
-
-My goal is to prove that, in many cases, these matrix models can be uniquely finetuned to train faster than layered models and achieve better accuracy with fewer parameters. Currently, I am reworking the Simple Recurrent Unit (Lei et al., 2017) into an INN with the eventual goal of significantly improving the model's performance through careful finetuning.
+Under the supervision of Professor Randy Paffenroth, my senior thesis explores iterative neural networks (INNs), which reimagine neural network designs as iterated functions, and the recently introduced Sequential2D framework for neural networks that frames INN functions as left matrix multiplications for enhanced computational efficiency. We investigate the effects of sparse and low-rank matrix approximations on model performance, particularly focusing on sparsity and weight distribution using the MNIST Random Anomaly Task. Our results highlight the delicate balance between parallelization advantages and the need for equitable weight distribution. The comparison of sparse, low rank, and dense matrices reveals low-rank matrices’ role in boosting computational speed without drastically affecting model accuracy. Overall, this research advances our understanding of INNs and Sequential2D, underlining the significance of matrix representation methods in fine-tuning neural network architectures for improved performance and efficiency.
 
 <img src='/images/portfolio_inn.png'>
 

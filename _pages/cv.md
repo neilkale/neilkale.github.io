@@ -11,11 +11,16 @@ redirect_from:
 
 Education
 ======
-* B.S. in Computer Science, Worcester Polytechnic Institute, 2024 (expected)
-* B.S. in Mathematical Sciences, Worcester Polytechnic Institute, 2024 (expected)
+* M.S. in Machine Learning, Carnegie Mellon University, 2026 (expected)
+* B.S. in Computer Science, Worcester Polytechnic Institute, 2024
+* B.S. in Mathematical Sciences, Worcester Polytechnic Institute, 2024
 
 Work experience
 ======
+* Summer 2024: Machine Learning Scientist Intern
+  * GoDaddy Inc
+  * Duties included: Building an LLM chatbot
+  * Supervisor: Ramji Chandrasekaran
 * Summer 2023: Research Assistant
   * Harvard Medical School
   * Duties included: Analyzing transcriptomics data
@@ -28,6 +33,7 @@ Skills
   * Modelling with sklearn
   * Neural networks with pytorch, pytorch-lightning
   * Image processing with opencv
+  * Natural language processing with langchain, ragas
 * R
 * GPU Programming
 * Adaptability
@@ -51,6 +57,4 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul> -->
 
-Service and leadership
-======
-* Team manager for 46 athletes on the men's varsity crew team.
+<!-- Service and leadership -->

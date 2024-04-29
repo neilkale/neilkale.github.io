@@ -1,6 +1,6 @@
 ---
 title: "Dynamical systems approaches for deep learning"
-excerpt: "My undergraduate senior thesis submitted in 2024 reimagines neural network designs as discrete dynamical systems. <br/><img src='/images/portfolio_inn.png'>"
+excerpt: "My undergraduate senior thesis from 2024 reimagines neural network designs as discrete dynamical systems, and investigates the effects of sparse and low-rank matrices on iterative network performance. <br/><img src='/images/portfolio_inn.png'>"
 collection: portfolio
 ---
 
@@ -10,4 +10,4 @@ Under the supervision of Professor Randy Paffenroth, my senior thesis explores i
 
 <img src='/images/portfolio_inn.png'>
 
-Figure. A two-layer multilayer perceptron (MLP) represented as a 3x3 iterative neural network. The SRU model is represented by a much sparser 14x14 INN.
+Figure. A two-layer multilayer perceptron (MLP) represented as a 3x3 iterative neural network.

@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Neil Kale"
 title_separator          : "-"
 name                     : &name "Neil Kale"
-description              : &description "Undergraduate researcher at Harvard Medical School"
+description              : &description "Graduate researcher at Carnegie Mellon University"
 url                      : https://neilkale.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "neilkale/neilkale.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Neil Kale"
   avatar           : "profile.png"
-  bio              : "Undergraduate researcher at Harvard Medical School, exploring AI for healthcare."
-  location         : "Worcester, MA"
+  bio              : "Graduate researcher at Carnegie Mellon University, exploring AI for healthcare."
+  location         : "Pittsburgh, PA"
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=OrQXY9sAAAAJ"

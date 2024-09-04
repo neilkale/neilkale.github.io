@@ -52,7 +52,7 @@ $dark-gray                  : mix(#000, $gray, 40%);
 $darker-gray                : mix(#000, $gray, 60%);
 $light-gray                 : mix(#fff, $gray, 50%);
 $lighter-gray               : mix(#fff, $gray, 90%);
-$gray-blue                  : mix(#007bb6, $gray, 50%);
+$dark-gray-blue             : mix($dark-gray, #007bb6, 30%);
 
 $body-color                 : #fff;
 $background-color           : #fff;
@@ -65,7 +65,7 @@ $primary-color              : #7a8288;
 $success-color              : #62c462;
 $warning-color              : #f89406;
 $danger-color               : #ee5f5b;
-$info-color                 : $gray-blue;
+$info-color                 : rgb(115, 123, 143);
 
 /* brands */
 $behance-color              : #1769FF;

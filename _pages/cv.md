@@ -19,7 +19,7 @@ Work experience
 ======
 * Summer 2024: Machine Learning Scientist Intern
   * GoDaddy Inc
-  * Duties included: Building an LLM chatbot
+  * Duties included: Building RAG pipelines and agentic AI
   * Supervisor: Ramji Chandrasekaran
 * Summer 2023: Research Assistant
   * Harvard Medical School

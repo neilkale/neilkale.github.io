@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I'm a first-year Master's student in the Machine Learning Department at [Carnegie Mellon University](https://www.cs.cmu.edu/). Previously, I studied computer science and mathematics at Worcester Polytechnic Institute, where I rowed for the men's varsity crew team. 
+Hi! I'm a first-year Master's student in the Machine Learning Department at [Carnegie Mellon University](https://www.cs.cmu.edu/). Previously, I studied computer science and mathematics at Worcester Polytechnic Institute, where I rowed for the men's varsity crew team. 
 
 Research interests
 ======

@@ -6,6 +6,10 @@ theme = 'typo'
 # Google analytics code
 # googleAnalytics = "G-xxxxxxxxx"
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+    
 [taxonomies]
 tag = 'tags'
 

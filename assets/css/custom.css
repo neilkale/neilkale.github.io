@@ -7,7 +7,7 @@ body {
 body::before {
   content: "";
   position: absolute;
-  bottom: 0px; /* Moved lower - reduced from 200px */
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   width: 100vw;
@@ -16,10 +16,16 @@ body::before {
   background-position: bottom center;
   background-size: cover;
   z-index: -1;
-  opacity: 0.2; /* Add transparency to make it more subtle */
-  /* Set height to allow the image to extend upward naturally */
-  height: 1100px; /* Increased height to show more of the image */
+  opacity: 0.2;
+  /* Set a large height to accommodate the full image */
+  height: 100vh;
   pointer-events: none;
+}
+
+/* Invert footer image colors in dark mode */
+body.dark::before {
+  filter: invert(1) !important;
+  opacity: 0.1 !important;
 }
 
 /* Ensure content remains above the background image */

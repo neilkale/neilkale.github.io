@@ -9,7 +9,7 @@ theme = 'typo'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
-    
+
 [taxonomies]
 tag = 'tags'
 
@@ -28,17 +28,17 @@ homeIntroTitle = 'Hi!'
 homeIntroContent = """
 I'm Neil Kale, a second-year Master's student in Machine Learning at [Carnegie Mellon University](https://www.ml.cmu.edu). I've also interned in the Safety, Evaluation, and Alignment Lab (SEAL) at [Scale AI](https://scale.com/research).
 
-As a safety researcher, I'm optimistic about AI. There is a world where we wake up in American homes built in affordable cities, warmed by clean energy, ride e-bikes to high-speed rail stations, breathing clean air the whole way. The trains zip us from our open communities into bustling metropoles where we meet other driven, passionate people and work together on social work, research, and art. 
+As a safety researcher, I'm optimistic about AI. There is a world where we wake up in American homes built in affordable cities, warmed by clean energy, ride e-bikes to high-speed rail stations, zipping from tight-knit communities into metropoles where we collaborate on social work, research, and art. 
 
-This world is not a guarantee, and we will have to fight for it! I work on research that brings us closer to a safe, abundant future.
+This world is not a guarantee, and we will have to fight for it! I work on research that I hope will bring us closer to a safe, abundant future.
  
 ## What You'll Find Here
 
-- **Posts**: Regular updates on projects, thoughts, and experiences
+- **Posts**: Occasional updates on projects, thoughts, and experiences
 - **Research**: Information about my current and past academic work  
 - **Sketches**: Perspective drawings of cafes, parks, and old buildings
 
-Feel free to explore and connect with me through the links provided.
+Feel free to explore and connect with me through the links provided below.
 """
 
 # Collection to display on home

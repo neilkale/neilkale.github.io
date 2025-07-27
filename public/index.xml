@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Neil Kale</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Neil Kale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Jul 2025 18:00:06 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Social Media</title>
+      <link>http://localhost:1313/posts/on-social-media/</link>
+      <pubDate>Sat, 26 Jul 2025 18:00:06 -0700</pubDate>
+      <guid>http://localhost:1313/posts/on-social-media/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Is social media a net positive for society? Can it be implemented in such a way as to become net positive?&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

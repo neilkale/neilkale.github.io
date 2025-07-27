@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intro on Neil Kale</title>
+    <link>http://localhost:1313/tags/intro/</link>
+    <description>Recent content in Intro on Neil Kale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Jul 2025 17:51:04 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/intro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Social Media</title>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Sat, 26 Jul 2025 17:51:04 -0700</pubDate>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      <description>&lt;h1 class=&#34;heading&#34; id=&#34;welcome-to-my-blog&#34;&gt;&#xA;  Welcome to My Blog!&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#welcome-to-my-blog&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;This is my first post on my personal website. I&amp;rsquo;m excited to share my thoughts and experiences here.&lt;/p&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;what-you-can-expect&#34;&gt;&#xA;  What You Can Expect&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#what-you-can-expect&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Technical posts&lt;/strong&gt; about machine learning and AI research&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Personal reflections&lt;/strong&gt; on my journey as a graduate student&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Project updates&lt;/strong&gt; from my work at CMU and Scale AI&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Travel stories&lt;/strong&gt; and sketches from around the world&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 class=&#34;heading&#34; id=&#34;getting-started&#34;&gt;&#xA;  Getting Started&#xA;  &lt;a class=&#34;anchor&#34; href=&#34;#getting-started&#34;&gt;#&lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;I built this site using Hugo with the beautiful &lt;a href=&#34;https://github.com/tomfran/typo&#34;&gt;Typo theme&lt;/a&gt;. The setup process was straightforward, and I&amp;rsquo;m looking forward to customizing it further.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,98 @@
+baseURL = 'https://neilkale.github.io/'
+languageCode = 'en-us'
+title = 'Neil Kale'
+theme = 'typo'
+
+# Google analytics code
+# googleAnalytics = "G-xxxxxxxxx"
+
+[taxonomies]
+tag = 'tags'
+
+[params]
+# Meta description
+description = "Neil Kale's Personal Website"
+faviconPath = 'icons'
+
+# Appearance settings
+theme = 'auto'
+colorPalette = 'default'
+hideHeader = false
+
+# Intro on main page, content is markdown
+homeIntroTitle = 'Hi!'
+homeIntroContent = """
+I'm Neil Kale, a second-year Master's student in Machine Learning at [Carnegie Mellon University](https://www.ml.cmu.edu). I've also interned in the Safety, Evaluation, and Alignment Lab (SEAL) at [Scale AI](https://scale.com/research).
+
+Despite working on safety, I'm optimistic about AI. There is a world where we wake up in American homes built in affordable cities, warmed by clean energy. We have an ethically-sourced breakfast with synthetic meat, and ride e-bikes to high-speed rail stations, breathing clean air the whole way. The trains zip us from our idyllic pastoral communities into bustling metropolises where we meet other driven, passionate people and do jobs which still matter post-AGI like social work, research, and art. 
+
+I hope to conduct research and build products that bring us closer to a sustainable and healthy future, and to spend as much of my free time out traveling the incredible world that we're building together.
+ 
+## What You'll Find Here
+
+- **Posts**: Regular updates on projects, thoughts, and experiences
+- **Research**: Information about my current and past academic work  
+- **Sketches**: Perspective drawings of cafes, parks, and old buildings
+
+Feel free to explore and connect with me through the links provided.
+"""
+
+# Collection to display on home
+# homeCollectionTitle = 'Posts'
+# homeCollection = 'posts'
+
+# Lists parameters
+paginationSize = 100
+listSummaries = false
+listDateFormat = 'Jan 2006'
+
+# Breadcrumbs
+[params.breadcrumbs]
+enabled = true
+showCurrentPage = true
+home = "Home"
+
+# Social icons (customize with your own links)
+[[params.social]]
+name = "github"
+url = "https://github.com/neilkale"
+
+[[params.social]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/neil-kale"
+
+[[params.social]]
+name = "x"
+url = "https://x.com/neilkale"
+
+[[params.social]]
+name = "googlescholar"
+url = "https://scholar.google.com/citations?hl=en&user=OrQXY9sAAAAJ&view_op=list_works&sortby=pubdate"
+
+[[params.social]]
+name = "gmail"
+url = "mailto:neil.kale.works@gmail.com"
+
+# Main menu pages
+[[params.menu]]
+name = "home"
+url = "/"
+
+[[params.menu]]
+name = "posts"
+url = "/posts"
+
+# Syntax highlight on code blocks
+[markup]
+[markup.highlight]
+style = 'algol'
+
+# Giscus comments (configure these if you want comments)
+[params.giscus]
+enable = false
+repo = "neilkale/neilkale.github.io"
+repoid = ""
+category = "General"
+categoryid = ""
+mapping = "pathname"
+theme = "preferred_color_scheme"

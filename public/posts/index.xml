@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Neil Kale</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Neil Kale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Jul 2025 18:00:06 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Social Media</title>
+      <link>http://localhost:1313/posts/on-social-media/</link>
+      <pubDate>Sat, 26 Jul 2025 18:00:06 -0700</pubDate>
+      <guid>http://localhost:1313/posts/on-social-media/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Is social media a net positive for society? Can it be implemented in such a way as to become net positive?&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Right now, most social media networks operate on the following schema:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;I post content.&lt;/li&gt;&#xA;&lt;li&gt;My friends view and react to that content.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Therefore, two barriers to use can be reduced. First, barrier to consumption. Several existing technologies already attempt to tackle this problem, most notably, recommendation systems.&lt;/p&gt;&#xA;&lt;p&gt;In the early days of social media, viewing your friends&amp;rsquo; content required navigating to their page. There was no content delivery. Recommendation systems solved this problem by algorithmically predicting the content you would be interested in. Initially, this just meant applying a series of static filters, like recent updates from your friends, and displaying those on a single page called your feed.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

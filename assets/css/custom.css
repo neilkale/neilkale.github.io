@@ -1,0 +1,30 @@
+/* Custom footer background image */
+body {
+  position: relative;
+  padding-bottom: 0px; /* Add space for the footer image */
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  bottom: 0px; /* Moved lower - reduced from 200px */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background-image: url('/footer.png');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.2; /* Add transparency to make it more subtle */
+  /* Set height to allow the image to extend upward naturally */
+  height: 1100px; /* Increased height to show more of the image */
+  pointer-events: none;
+}
+
+/* Ensure content remains above the background image */
+.content,
+footer {
+  position: relative;
+  z-index: 1;
+} 

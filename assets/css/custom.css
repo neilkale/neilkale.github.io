@@ -2,6 +2,7 @@
 body {
   position: relative;
   padding-bottom: 0px; /* Add space for the footer image */
+  transition: background-color 1s cubic-bezier(0.42, 0, 1, 1);
 }
 
 body::before {
@@ -34,3 +35,85 @@ footer {
   position: relative;
   z-index: 1;
 } 
+
+.content,
+.content * {
+  transition: background-color 1s cubic-bezier(0.2, 0, 0, 1), border-color 1s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.theme-toggle {
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+  top: calc(var(--header-top-gap, 2rem) * 0.5);
+  right: clamp(1rem, 3vw, 3rem);
+  overflow: visible;
+  width: 5rem;
+  height: 5rem;
+  z-index: 20;
+}
+
+.theme-toggle-icon {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 7.2rem;
+  height: 11.2rem;
+  max-width: none;
+  object-fit: contain;
+  transform: translate(-50%, -170%);
+  opacity: 0;
+  transition: transform 0.55s cubic-bezier(0.42, 0, 0.2, 1), opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.theme-toggle-icon.is-active {
+  transform: translate(-50%, -40%);
+  opacity: 1;
+}
+
+.theme-toggle-icon.no-transition {
+  transition: none;
+}
+
+.theme-toggle-icon.is-leaving {
+  transform: translate(-50%, -220%);
+  opacity: 0;
+  transition: transform 0.45s ease-in, opacity 0.45s ease-in;
+}
+
+.theme-toggle-icon--moon {
+  filter: invert(1);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px dashed var(--content-secondary);
+  outline-offset: 6px;
+}
+
+@media (max-width: 720px) {
+  .header-bar {
+    padding-right: 4.5rem;
+  }
+
+  .theme-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

@@ -1,0 +1,54 @@
+{{/* Header */}}
+
+<div class="header">
+
+    {{ if or (not (.Param "hideHeader")) .IsHome }}
+
+    <div class="header-bar">
+        <h1 class="header-title">
+            <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
+        </h1>
+
+        <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            title="Switch to dark mode">
+            <img
+                class="theme-toggle-icon theme-toggle-icon--sun is-active"
+                data-theme="light"
+                src="{{ "icons/sun.svg" | relURL }}"
+                alt=""
+                aria-hidden="true"
+                decoding="async" />
+            <img
+                class="theme-toggle-icon theme-toggle-icon--moon"
+                data-theme="dark"
+                src="{{ "icons/moon.svg" | relURL }}"
+                alt=""
+                aria-hidden="true"
+                decoding="async" />
+        </button>
+    </div>
+
+    <div class="header-menu">
+        {{ $currentPage := . }}
+
+        {{ with site.Params.menu }}
+        {{ range . }}
+
+        <p class="small {{ if eq .name (lower $currentPage.Name) }} bold {{end}}">
+            <a href="{{ .url }}" {{ if and (isset . "newTab") .newTab
+                }}target="_blank" rel="noopener noreferrer" {{ end }}>
+                /{{.name }}
+            </a>
+        </p>
+        {{ end }}
+        {{ end }}
+    </div>
+
+    {{ end }}
+
+</div>
+

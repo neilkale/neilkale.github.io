@@ -1,0 +1,39 @@
+{{ if .IsHome }}
+  {{/* Birds overlay shown after a brief delay */}}
+  <div class="birds-overlay" data-birds-overlay hidden aria-hidden="true">
+    <img
+      src="{{ "birds.gif" | relURL }}"
+      alt="Animated flock of birds"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+
+  <script>
+  (function () {
+    const DELAY_MS = 5000;
+    const overlay = document.querySelector("[data-birds-overlay]");
+
+    if (!overlay) {
+      return;
+    }
+
+    const showOverlay = () => {
+      overlay.removeAttribute("hidden");
+      overlay.setAttribute("aria-hidden", "false");
+      overlay.classList.add("is-visible");
+    };
+
+    const handleLoad = () => {
+      window.setTimeout(showOverlay, DELAY_MS);
+    };
+
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad, { once: true });
+    }
+  })();
+  </script>
+{{ end }}
+

@@ -286,3 +286,32 @@ body.dark .publication-abstract[open] .publication-abstract-body {
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+.birds-overlay {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.birds-overlay.is-visible {
+  opacity: 0.4;
+}
+
+.birds-overlay img {
+  width: 100vw;
+  max-width: none;
+  height: auto;
+}
+
+body.dark .birds-overlay img {
+  filter: invert(1);
+  opacity: 0.4;
+}

@@ -11,4 +11,6 @@ This will ensure all dev dependencies are consistent and available.
 
 # Other Notes
 
+To build the server for local development, use `hugo server --buildDrafts --buildFuture --disableFastRender`
+
 <!-- To any curious humans who ended up here -- this is my AGENTS.md page for Cursor! Highly recommend using one of these. -->

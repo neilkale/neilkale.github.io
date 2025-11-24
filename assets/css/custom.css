@@ -29,6 +29,11 @@ body.dark::before {
   opacity: 0.1 !important;
 }
 
+/* Allow images tagged with #invert-on-dark to auto-color-correct in dark mode */
+body.dark .img-invert-on-dark img {
+  filter: invert(0.92) hue-rotate(180deg) saturate(0.8);
+}
+
 /* Ensure content remains above the background image */
 .content,
 footer {

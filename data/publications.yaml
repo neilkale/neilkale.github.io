@@ -1,0 +1,64 @@
+# Update this file to add or edit publications.
+# Available fields per entry:
+# enabled (bool), title (string), url (string), authors (list),
+# venue (string), awards (list of strings), code (string URL), abstract (string).
+
+- enabled: true
+  title: "Reliable Weak-to-Strong Monitoring of LLM Agents"
+  url: "https://openreview.net/forum?id=WV7xIboTDK"
+  authors:
+    - "**Neil Kale**"
+    - "Chen Bo Calvin Zhang"
+    - "Kevin Zhu"
+    - "Ankit Aich"
+    - "Paula Rodriguez"
+    - "Christina Q Knight"
+    - "Zifan Wang"
+  venue: "Under review at ICLR 2026"
+  awards: []
+  code: ""
+  abstract: >
+    We stress test monitoring systems for detecting covert misbehavior in LLM agents (e.g., secretly exfiltrating data). We propose a monitor red teaming (MRT) workflow that varies agent and monitor awareness, adversarial evasion strategies, and evaluation across tool-calling (SHADE-Arena) and computer-use (CUA-SHADE-Arena) environments. We benchmark standard monitor scaffoldings and introduce a hybrid hierarchical--sequential design. Our work positions MRT as a standard workflow for stress-testing oversight, revealing robustness gaps in both LLM- and human-based monitoring. We release code, data, and logs to support further research.
+
+- enabled: true
+  title: "Membership Inference Attacks for Unseen Classes"
+  url: "https://arxiv.org/abs/2506.06488"
+  authors:
+    - "Pratiksha Thaker*"
+    - "**Neil Kale\\***"
+    - "Zhiwei Steven Wu"
+    - "Virginia Smith"
+  venue: "Under review at ICLR 2026"
+  awards: []
+  code: ""
+  abstract: >
+    Current membership inference attacks rely on shadow models that imitate the target model, but these attacks break down when the attacker lacks in-distribution data, as in many real AI safety settings. We show that in these restricted-data regimes, shadow-model attacks can fail catastrophically, while quantile regression attacks—which learn features of members that generalize to unseen classes—remain effective. Empirically and theoretically, quantile regression attacks achieve up to 11× higher true positive rates than shadow-model methods, revealing a critical failure mode in existing tools and a caution for practitioners deploying MIAs in practice.
+
+- enabled: true
+  title: "Mitigating Modal Imbalance in Multimodal Reasoning"
+  url: "https://arxiv.org/abs/2510.02608"
+  authors:
+    - "Chen Henry Wu*"
+    - "**Neil Kale\\***"
+    - "Aditi Raghunathan"
+  venue: "Conference on Language Models 2025"
+  awards: []
+  code: ""
+  abstract: >
+    We investigate the reliability of foundation models in performing joint reasoning over images and text. While models excel at detecting conflicts within a single modality, performance drops drastically in cross-modal scenarios due to an "attention imbalance" where the model disproportionately prioritizes one input type over another. We find that simply scaling post-training data fails to solve this issue, but explicitly training on combined modalities effectively restores attention balance and improves downstream performance on several vision-language benchmarks.
+
+- enabled: true
+  title: "Position: LLM Unlearning Benchmarks are Weak Measures of Progress"
+  url: "https://arxiv.org/abs/2410.02879"
+  authors:
+    - "Pratiksha Thaker"
+    - "Shengyuan Hu"
+    - "**Neil Kale**"
+    - "Yash Maurya"
+    - "Zhiwei Steven Wu"
+    - "Virginia Smith"
+  venue: "Under review at ICLR 2026"
+  awards: []
+  code: ""
+  abstract: >
+    Unlearning aims to make LLMs safer by removing harmful or sensitive information, but current benchmarks often give an overly optimistic picture of how well this works. With simple changes to popular benchmarks, we show that “forgotten” information can still be recovered and that retained knowledge can be harmed, especially when forget/retain sets are loosely dependent or targets are ambiguous. We urge caution when interpreting these benchmarks and offer recommendations for more reliable unlearning evaluation.

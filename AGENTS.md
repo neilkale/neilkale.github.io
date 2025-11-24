@@ -13,4 +13,6 @@ This will ensure all dev dependencies are consistent and available.
 
 To build the server for local development, use `hugo server --buildDrafts --buildFuture --disableFastRender`
 
+To add publications, look at `data/publications.yaml`. To add posts, directly add leaf folders to `content/posts`.
+
 <!-- To any curious humans who ended up here -- this is my AGENTS.md page for Cursor! Highly recommend using one of these. -->

@@ -83,13 +83,17 @@ name = "home"
 url = "/"
 
 [[params.menu]]
+name = "posts"
+url = "/posts"
+
+[[params.menu]]
+name = "research"
+url = "/publications"
+
+[[params.menu]]
 name = "cv"
 url = "/cv.pdf"
 newTab = true
-
-[[params.menu]]
-name = "posts"
-url = "/posts"
 
 # Syntax highlight on code blocks
 [markup]

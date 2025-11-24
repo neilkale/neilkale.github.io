@@ -1,0 +1,61 @@
+{{ $pub := .Pub }}
+
+<article class="publication-card">
+  <header class="publication-header">
+    <div class="publication-title-block">
+      <h3 class="publication-title">
+        {{- if $pub.url -}}
+          <a href="{{ $pub.url }}" class="publication-title-link" target="_blank" rel="noopener">
+            {{ $pub.title }}
+          </a>
+        {{- else -}}
+          {{ $pub.title }}
+        {{- end -}}
+      </h3>
+
+      {{ with $pub.authors }}
+        {{ $formatted := delimit (apply . "markdownify" ".") ", " }}
+        <p class="publication-authors">{{ $formatted | safeHTML }}</p>
+      {{ end }}
+
+      {{ $hasVenue := $pub.venue }}
+      {{ $hasAwards := and $pub.awards (gt (len $pub.awards) 0) }}
+      {{ if or $hasVenue $hasAwards }}
+        <p class="publication-venue">
+          {{ with $pub.venue }}{{ . }}{{ end }}
+          {{ if and $hasVenue $hasAwards }}, {{ end }}
+          {{ if $hasAwards }}
+            {{ range $i, $award := $pub.awards }}
+              {{ if $i }}, {{ end }}<em>{{ $award }}</em>
+            {{ end }}
+          {{ end }}
+        </p>
+      {{ end }}
+    </div>
+  </header>
+
+  <div class="publication-links">
+    {{ with $pub.url }}
+      <a href="{{ . }}" class="publication-link" target="_blank" rel="noopener">Paper</a>
+    {{ end }}
+
+    {{ with $pub.code }}
+      {{ if . }}
+        <a href="{{ . }}" class="publication-link" target="_blank" rel="noopener">Code</a>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{ with $pub.abstract }}
+    <details class="publication-abstract">
+      <summary class="publication-toggle-button">
+        <span class="sr-only">Toggle abstract</span>
+        <span class="publication-toggle-caret" aria-hidden="true"></span>
+      </summary>
+      <div class="publication-abstract-body">
+        <p>{{ . }}</p>
+      </div>
+    </details>
+  {{ end }}
+</article>
+

@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="publications-container">
+  {{ partial "breadcrumbs.html" . }}
+
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}
+    <div class="publications-intro">
+      {{ . }}
+    </div>
+  {{ end }}
+
+  {{ $all := site.Data.publications | default (slice) }}
+  {{ $visible := where $all "enabled" "ne" false }}
+
+  {{ if gt (len $visible) 0 }}
+    <div class="publications-list">
+      {{ range $index, $pub := $visible }}
+        {{ partial "publication/card.html" (dict "Pub" $pub "Index" $index) }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="publications-empty">
+      Publications will appear here once they’re ready to share.
+    </p>
+  {{ end }}
+</div>
+{{ end }}
+

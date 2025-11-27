@@ -29,9 +29,70 @@ body.dark::before {
   opacity: 0.1 !important;
 }
 
-/* Allow images tagged with #invert-on-dark to auto-color-correct in dark mode */
-body.dark .img-invert-on-dark img {
+/* Allow dark-mode inversion on SVGs or other sources */
+.img-invert-on-dark {
+  transition: filter 1s cubic-bezier(0.2, 0, 0, 1);
+}
+
+body.dark .img-invert-on-dark {
   filter: invert(0.92) hue-rotate(180deg) saturate(0.8);
+}
+
+/* Main intro portrait sizing */
+.intro .home-portrait {
+  width: clamp(12rem, 20vw, 16rem);
+  display: block;
+  margin: 0 auto 1.5rem;
+}
+
+.intro::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.intro .home-portrait__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-portrait--dual {
+  position: relative;
+}
+
+.home-portrait--dual .home-portrait__img {
+  transition: opacity 1s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.home-portrait--dual .home-portrait__img--dark {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+.home-portrait--dual .home-portrait__img {
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+}
+
+.home-portrait--dual .home-portrait__img--light {
+  opacity: 1;
+}
+
+body.dark .home-portrait--dual .home-portrait__img--light {
+  opacity: 0;
+}
+
+body.dark .home-portrait--dual .home-portrait__img--dark {
+  opacity: 0.7;
+}
+
+@media (min-width: 700px) {
+  .intro .home-portrait {
+    float: right;
+    margin: -4rem 0 1rem 1rem;
+  }
 }
 
 /* Ensure content remains above the background image */
@@ -302,7 +363,7 @@ body.dark .publication-abstract[open] .publication-abstract-body {
 }
 
 .birds-overlay.is-visible {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .birds-overlay img {

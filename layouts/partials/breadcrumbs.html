@@ -11,12 +11,12 @@
         </a>
         
         {{- if (lt $i (sub $.Ancestors.Len 1)) -}}
-            <span class="breadcrumbs-separator">></span>
+            <span class="breadcrumbs-separator">›</span>
         {{- end -}}
     {{- end -}}
 
     {{- if $breadcrumbs.showCurrentPage -}}
-        <span class="breadcrumbs-separator">></span>
+        <span class="breadcrumbs-separator">›</span>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     {{- end -}}
 </div>

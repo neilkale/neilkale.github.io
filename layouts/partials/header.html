@@ -5,9 +5,14 @@
     {{ if or (not (.Param "hideHeader")) .IsHome }}
 
     <div class="header-bar">
-        <h1 class="header-title">
-            <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
-        </h1>
+        <div class="header-title-group">
+            <h1 class="header-title">
+                <a href="{{ site.BaseURL }}">{{ site.Title }}</a>
+            </h1>
+            {{ with site.Params.headerSubtitle }}
+            <p class="header-subtitle">{{ . }}</p>
+            {{ end }}
+        </div>
 
         <button
             id="theme-toggle"

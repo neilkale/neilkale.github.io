@@ -22,6 +22,7 @@ faviconPath = 'icons'
 theme = 'auto'
 colorPalette = 'default'
 hideHeader = false
+headerSubtitle = '(नील काळे)'
 
 # Intro on main page, content is markdown
 homeIntroTitle = 'Hi!'
@@ -40,9 +41,9 @@ This world is not a guarantee, and we will have to fight for it! I work on resea
  
 ## What You'll Find Here
 
-- **Posts**: Occasional updates on projects, thoughts, and experiences
-- **Research**: Information about my current and past academic work  
-- **Sketches**: Perspective drawings of cafes, parks, and old buildings
+- **[Posts](/posts)**: Occasional updates on projects, thoughts, and experiences
+- **[Research](/publications)**: Information about my current and past academic work  
+- **[Sketches](/sketches)**: Perspective drawings of cafes, parks, and old buildings
 
 Feel free to explore and connect with me through the links provided below.
 """
@@ -95,6 +96,10 @@ url = "/posts"
 [[params.menu]]
 name = "research"
 url = "/publications"
+
+[[params.menu]]
+name = "sketches"
+url = "/sketches"
 
 [[params.menu]]
 name = "cv"

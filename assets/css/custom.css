@@ -109,11 +109,55 @@ footer {
 
 .header-bar {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: nowrap;
   position: relative;
+}
+
+.header-title-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.75rem;
+  row-gap: 0.75rem;
+  line-height: 1;
+  font-size: 2.6em;
+}
+
+.header-title {
+  margin: 0;
+  line-height: 1;
+  font-size: 1em;
+}
+
+.header-title a {
+  text-decoration: none;
+}
+
+.header .header-subtitle {
+  margin: 0;
+  line-height: 1;
+  font-family: "Tillana", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
+  font-size: 0.75em;
+  color: currentColor;
+  opacity: 0.9;
+  letter-spacing: 0.05em;
+  font-kerning: normal;
+  font-feature-settings: "liga", "clig";
+}
+
+@media (max-width: 540px) {
+  .header-title-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+body.dark .header .header-subtitle {
+  opacity: 1;
 }
 
 .theme-toggle {
@@ -375,4 +419,191 @@ body.dark .publication-abstract[open] .publication-abstract-body {
 body.dark .birds-overlay img {
   filter: invert(1);
   opacity: 0.4;
+}
+
+/* Sketches page ---------------------------------------------------------- */
+.sketches-page {
+  padding-bottom: 4rem;
+}
+
+.sketches-page__header {
+  margin-bottom: clamp(1.5rem, 3vw, 2.75rem);
+}
+
+.sketches-page__intro {
+  max-width: 65ch;
+  color: var(--content-secondary);
+}
+
+.sketches-grid {
+  --sketch-row-height: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: clamp(1.25rem, 3vw, 2.25rem);
+  grid-auto-rows: var(--sketch-row-height);
+  grid-auto-flow: dense;
+  align-items: start;
+}
+
+.sketches-page__empty {
+  font-style: italic;
+  color: var(--content-secondary);
+}
+
+.sketch-card {
+  position: relative;
+  break-inside: avoid;
+  margin: 0;
+  --sketch-tilt: 0deg;
+}
+
+.sketch-card__visual {
+  position: relative;
+  display: block;
+  transition: transform 0.25s ease;
+  transform: rotate(var(--sketch-tilt));
+  isolation: isolate;
+}
+
+.sketch-card__frame {
+  padding: clamp(0.75rem, 1.5vw, 1.4rem);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 0.65rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.08),
+    0 6px 18px rgba(0, 0, 0, 0.06),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+body.dark .sketch-card__frame {
+  background: rgba(20, 20, 20, 0.9);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.35),
+    0 6px 18px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.sketch-card:hover .sketch-card__visual,
+.sketch-card:focus-within .sketch-card__visual {
+  transform: rotate(calc(var(--sketch-tilt) + 0.4deg)) translateY(-2px);
+}
+
+.sketch-card:hover .sketch-card__frame,
+.sketch-card:focus-within .sketch-card__frame {
+  box-shadow:
+    0 28px 50px rgba(0, 0, 0, 0.12),
+    0 12px 22px rgba(0, 0, 0, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.75);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sketch-card__visual {
+    transition: none;
+  }
+
+  .sketch-card:hover .sketch-card__visual,
+  .sketch-card:focus-within .sketch-card__visual {
+    transform: rotate(var(--sketch-tilt));
+  }
+}
+
+.sketch-card__frame img {
+  width: 100%;
+  display: block;
+  border-radius: 0.35rem;
+  background: #fdfdf8;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.sketch-card__tape {
+  position: absolute;
+  width: clamp(4.2rem, 11vw, 6rem);
+  height: clamp(1.54rem, 4.4vw, 2.64rem);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.15));
+  z-index: 3;
+  transform-origin: center;
+}
+
+body.dark .sketch-card__tape {
+  filter:
+    invert(0.85)
+    drop-shadow(0 3px 8px rgba(0, 0, 0, 0.35));
+  opacity: 0.7;
+  mix-blend-mode: screen;
+}
+
+.sketch-card__tape--variant-1 {
+  background-image: url('/tape/1.png');
+}
+
+.sketch-card__tape--variant-2 {
+  background-image: url('/tape/2.png');
+}
+
+.sketch-card__tape--variant-3 {
+  background-image: url('/tape/3.png');
+}
+
+.sketch-card__tape--variant-4 {
+  background-image: url('/tape/4.png');
+}
+
+.sketch-card__tape--tl {
+  top: 0;
+  left: 0;
+  transform: translate(-40%, -30%) rotate(135deg);
+}
+
+.sketch-card__tape--tr {
+  top: 0;
+  right: 0;
+  transform: translate(40%, -30%) rotate(45deg);
+}
+
+.sketch-card__tape--bl {
+  bottom: 0;
+  left: 0;
+  transform: translate(-40%, 30%) rotate(225deg);
+}
+
+.sketch-card__tape--br {
+  bottom: 0;
+  right: 0;
+  transform: translate(40%, 30%) rotate(315deg);
+}
+
+.sketch-card__note {
+  margin: 0.65rem 0 0;
+  font-size: 0.95rem;
+  color: var(--content-secondary);
+  font-style: italic;
+  text-align: center;
+}
+
+.sketch-card--tilt-left {
+  --sketch-tilt: -2.4deg;
+}
+
+.sketch-card--tilt-right {
+  --sketch-tilt: 2.1deg;
+}
+
+.sketch-card--float {
+  margin-top: -0.4rem;
+}
+
+.sketch-card--tall .sketch-card__frame img {
+  max-height: none;
+}
+
+.sketch-card--wide .sketch-card__frame {
+  padding-inline: clamp(1.1rem, 2vw, 1.75rem);
 }

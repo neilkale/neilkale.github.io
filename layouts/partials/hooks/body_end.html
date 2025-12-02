@@ -37,3 +37,70 @@
   </script>
 {{ end }}
 
+{{ if eq .RelPermalink "/sketches/" }}
+  <script>
+  (function () {
+    const grid = document.querySelector("[data-sketches-grid]");
+    if (!grid) {
+      return;
+    }
+
+    const cards = Array.from(grid.children);
+    if (cards.length === 0) {
+      return;
+    }
+
+    const getMetrics = () => {
+      const styles = window.getComputedStyle(grid);
+      const rowHeight = parseFloat(styles.getPropertyValue("--sketch-row-height")) || 12;
+      const gapValue = styles.rowGap || styles.getPropertyValue("row-gap") || "0";
+      const gap = parseFloat(gapValue) || 0;
+      return { rowHeight, gap };
+    };
+
+    const setSpan = (card) => {
+      if (!card) {
+        return;
+      }
+      const { rowHeight, gap } = getMetrics();
+      const span = Math.max(1, Math.ceil((card.offsetHeight + gap) / (rowHeight + gap)));
+      card.style.gridRowEnd = `span ${span}`;
+    };
+
+    const applyToAll = () => {
+      cards.forEach(setSpan);
+    };
+
+    const observeCards = () => {
+      if (typeof ResizeObserver === "undefined") {
+        applyToAll();
+        return;
+      }
+      const observer = new ResizeObserver((entries) => {
+        entries.forEach((entry) => setSpan(entry.target));
+      });
+      cards.forEach((card) => observer.observe(card));
+    };
+
+    const wireImages = () => {
+      const images = grid.querySelectorAll("img");
+      images.forEach((img) => {
+        const update = () => setSpan(img.closest(".sketch-card"));
+        if (img.complete) {
+          update();
+        } else {
+          img.addEventListener("load", update, { once: true });
+          img.addEventListener("error", update, { once: true });
+        }
+      });
+    };
+
+    window.addEventListener("resize", applyToAll, { passive: true });
+
+    applyToAll();
+    observeCards();
+    wireImages();
+  })();
+  </script>
+{{ end }}
+

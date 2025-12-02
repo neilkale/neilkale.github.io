@@ -1,0 +1,56 @@
+{{ define "main" }}
+<div class="sketches-page">
+  {{ partial "breadcrumbs.html" . }}
+
+  <header class="sketches-page__header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="sketches-page__intro">
+        {{ . }}
+      </div>
+    {{ end }}
+  </header>
+
+  {{ $all := site.Data.sketches | default (slice) }}
+  {{ $visible := where $all "enabled" "ne" false }}
+
+  {{ if gt (len $visible) 0 }}
+    <div class="sketches-grid" data-sketches-grid>
+      {{ range $index, $sketch := $visible }}
+        {{ $classes := slice "sketch-card" }}
+        {{ with $sketch.variant }}
+          {{ $classes = $classes | append (printf "sketch-card--%s" .) }}
+        {{ end }}
+        {{ $alt := default (printf "Sketch %d" (add $index 1)) $sketch.alt }}
+        <figure class="{{ delimit $classes " " }}">
+          <div class="sketch-card__visual">
+            <div class="sketch-card__frame">
+              <img src="{{ $sketch.image | safeURL }}" alt="{{ $alt }}" loading="lazy" decoding="async" />
+            </div>
+            {{ $cornerOffsets := slice
+              (dict "slug" "tl" "offset" 1)
+              (dict "slug" "tr" "offset" 3)
+              (dict "slug" "bl" "offset" 5)
+              (dict "slug" "br" "offset" 7)
+            }}
+            {{ $variantTable := slice "1" "1" "1" "2" "2" "2" "3" "3" "3" "4" }}
+            {{ range $cornerOffsets }}
+              {{ $seed := printf "%s-%d-%s-%d" $sketch.image $index .slug .offset | hash.FNV32a }}
+              {{ $variant := index $variantTable (mod $seed (len $variantTable)) }}
+              <span class="sketch-card__tape sketch-card__tape--{{ .slug }} sketch-card__tape--variant-{{ $variant }}" aria-hidden="true"></span>
+            {{ end }}
+          </div>
+          {{ with $sketch.note }}
+            <figcaption class="sketch-card__note">{{ . | markdownify }}</figcaption>
+          {{ end }}
+        </figure>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="sketches-page__empty">
+      Sketches will appear here once the next sketchbook spread is ready.
+    </p>
+  {{ end }}
+</div>
+{{ end }}
+

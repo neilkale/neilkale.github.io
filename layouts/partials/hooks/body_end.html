@@ -1,6 +1,12 @@
 {{ if .IsHome }}
-  {{/* Birds overlay shown after a brief delay */}}
-  <div class="birds-overlay" data-birds-overlay hidden aria-hidden="true">
+  {{/* Animal overlays revealed once the page has settled */}}
+  <div
+    class="animals-overlay animals-overlay--birds"
+    data-animals-overlay
+    data-delay="5000"
+    hidden
+    aria-hidden="true"
+  >
     <img
       src="{{ "birds.gif" | relURL }}"
       alt="Animated flock of birds"
@@ -9,29 +15,91 @@
     />
   </div>
 
+  <div
+    class="animals-overlay animals-overlay--moose"
+    data-animals-overlay
+    data-delay="10000"
+    data-visible-duration="12000"
+    data-show-chance="0.2"
+    hidden
+    aria-hidden="true"
+  >
+    <img
+      src="{{ "moose.gif" | relURL }}"
+      alt="Animated moose"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+
   <script>
   (function () {
-    const DELAY_MS = 5000;
-    const overlay = document.querySelector("[data-birds-overlay]");
+    const overlays = Array.from(document.querySelectorAll("[data-animals-overlay]"));
 
-    if (!overlay) {
+    if (overlays.length === 0) {
       return;
     }
 
-    const showOverlay = () => {
+    const TRANSITION_MS = 500;
+
+    const parseNumberAttr = (element, attributeName, fallback = 0) => {
+      const attrValue = element.getAttribute(attributeName);
+      const parsed = Number.parseInt(attrValue, 10);
+      if (!Number.isFinite(parsed)) {
+        return fallback;
+      }
+      return Math.max(0, parsed);
+    };
+
+    const parseChanceAttr = (element, attributeName) => {
+      const attrValue = element.getAttribute(attributeName);
+      if (attrValue === null) {
+        return 1;
+      }
+      const parsed = Number.parseFloat(attrValue);
+      if (!Number.isFinite(parsed)) {
+        return 1;
+      }
+      return Math.min(Math.max(parsed, 0), 1);
+    };
+
+    const showOverlay = (overlay) => {
       overlay.removeAttribute("hidden");
       overlay.setAttribute("aria-hidden", "false");
       overlay.classList.add("is-visible");
     };
 
-    const handleLoad = () => {
-      window.setTimeout(showOverlay, DELAY_MS);
+    const hideOverlay = (overlay) => {
+      overlay.classList.remove("is-visible");
+      overlay.setAttribute("aria-hidden", "true");
+      window.setTimeout(() => {
+        overlay.setAttribute("hidden", "");
+      }, TRANSITION_MS);
+    };
+
+    const scheduleOverlay = () => {
+      overlays.forEach((overlay) => {
+        const showChance = parseChanceAttr(overlay, "data-show-chance");
+        if (showChance <= 0 || (showChance < 1 && Math.random() >= showChance)) {
+          return;
+        }
+
+        const delayMs = parseNumberAttr(overlay, "data-delay");
+        const visibleDuration = parseNumberAttr(overlay, "data-visible-duration", 0);
+
+        window.setTimeout(() => {
+          showOverlay(overlay);
+          if (visibleDuration > 0) {
+            window.setTimeout(() => hideOverlay(overlay), visibleDuration);
+          }
+        }, delayMs);
+      });
     };
 
     if (document.readyState === "complete") {
-      handleLoad();
+      scheduleOverlay();
     } else {
-      window.addEventListener("load", handleLoad, { once: true });
+      window.addEventListener("load", scheduleOverlay, { once: true });
     }
   })();
   </script>

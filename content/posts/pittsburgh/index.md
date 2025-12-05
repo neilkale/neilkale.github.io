@@ -91,8 +91,11 @@ Vietnamese speakeasy with a killer espresso martini, "The Dark Side of Saigon." 
 **Allegheny Wine Mixer**  
 Eclectic decor, nice wines.
 
-**Hidden Harbor**  
+**Hidden Harbor** 
 Tiki bar. The drinks are fun.
+
+**Arsenal Cider House**
+Over a dozen crisp ciders brewed in house. Cold cider by the fire reminds me of Switzerland.
 
 **The Speakeasy at William Penn** — *IHBTY.* Seems cool.
 
@@ -148,7 +151,7 @@ Pittsburgh classic and tourist must-do; solid Pastrami sandwich. It's a chain, b
 #### North Side
 **Subba** — Mom-and-pop Nepalese/Bhutanese. Datsi was interesting and tasty.
 
-**Huszar** — *IHBTY.* Hungarian restaurant! I need to go try the goulash 🤤
+**Huszar** — Hungarian restaurant! The goulash and langos slapped 🤤
 
 **Badamo's Pizza** — *IHBTY.* Heard it's the best pizza in Pittsburgh.
 
@@ -221,6 +224,8 @@ Pittsburgh classic and tourist must-do; solid Pastrami sandwich. It's a chain, b
 **Rose Tea Cafe** ★ — My go-to place on Craig Street. The beef broccoli has sustained me through many late nights.
 
 **Oishii Bento** — Went with a friend once, nice bento lunch.
+
+**Wushiland** - Solid honey oolong milk tea. The boba pearls are hit-or-miss.
 
 **Dave and Andy's** — *IHBTY.* They make their own waffle cones!
 

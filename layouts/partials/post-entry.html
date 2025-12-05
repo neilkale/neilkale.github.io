@@ -29,9 +29,10 @@
               const res = await fetch('{{ $counterURL }}');
               if (!res.ok) throw new Error('counter request failed');
               const data = await res.json();
+              const count = data?.total_hits;
               const el = document.getElementById('{{ $viewID }}');
-              if (el && data && typeof data.total !== 'undefined') {
-                el.textContent = `${data.total} views`;
+              if (el && count != null) {
+                el.textContent = `${count} views`;
               }
             } catch (err) {
               // no-op on fetch failure

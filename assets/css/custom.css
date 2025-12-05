@@ -107,6 +107,13 @@ footer {
   transition: background-color 1s cubic-bezier(0.2, 0, 0, 1), border-color 1s cubic-bezier(0.2, 0, 0, 1);
 }
 
+/* Post list view counter */
+.line-views {
+  font-size: small;
+  color: var(--content-secondary);
+  margin: 0.1rem 0 0;
+}
+
 .header-bar {
   display: flex;
   align-items: flex-start;

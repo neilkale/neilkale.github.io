@@ -12,6 +12,9 @@ This list grew organically during my time here and isn't very curated. It includ
 
 In case you'd prefer to look at a map, [here's a Google Map list with all these places.](https://maps.app.goo.gl/m3YkXZK7z6aqP8f79)
 
+![A custom Google Map of all the places mentioned below.](map.png#invert-on-dark)
+*Caption: Over 100 Pittsburgh recs. Click the link above for the interactive version.*
+
 **How to read this guide:**
 - ★ = My top recommendations
 - *IHBTY* = I Haven't Been There Yet (but I want to)

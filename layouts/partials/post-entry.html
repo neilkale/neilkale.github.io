@@ -1,0 +1,30 @@
+<div class="post-line">
+
+    {{ $dateFormat := .Site.Params.listDateFormat | default "2 Jan 2006" }}
+
+    {{ if .Parent.Param "showListDate" | default true }}
+        <p class="line-date">{{ .Date | time.Format $dateFormat }} </p>
+    {{ end }}
+
+    {{ $link := .RelPermalink }}
+    {{ $externalLink := .Params.externalURL }}
+    {{ if $externalLink }}
+        {{ $link = $externalLink }}
+    {{ end }}
+
+    <div>
+        <p class="line-title">
+            <a href="{{ $link }}" {{ if $externalLink }}target="_blank" rel="noopener"{{ end }}>
+                {{ .Title }}
+                {{ if $externalLink }}
+                    <span aria-hidden="true">&nearr;</span>
+                {{ end }}
+            </a>
+        </p>
+
+        {{ if .Site.Params.listSummaries }}
+        <p class="line-summary"> {{ .Summary }} </p>
+        {{ end }}
+    </div>
+</div>
+

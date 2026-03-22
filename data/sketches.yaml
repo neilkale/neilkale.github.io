@@ -24,3 +24,8 @@
   variant: float
   enabled: true
 
+- image: /sketches/saint_frank.jpeg
+  alt: "Saint Frank Coffee"
+  note: "Russian Hill, San Francisco, CA"
+  variant: tilt-right
+  enabled: true

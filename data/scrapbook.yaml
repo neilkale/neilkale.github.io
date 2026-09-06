@@ -6,25 +6,25 @@
 # - enabled (optional): set to false to temporarily hide the entry
 #
 # Example entries (disabled by default so they stay hidden until replaced):
-- image: /sketches/painted_ladies.jpeg
+- image: /scrapbook/painted_ladies.jpeg
   alt: "Painted Ladies"
   note: "Nob Hill, San Francisco, CA"
   variant: tilt-left
   enabled: true
 
-- image: /sketches/social_study.jpeg
+- image: /scrapbook/social_study.jpeg
   alt: "The Social Study"
   note: "Japantown, San Francisco, CA"
   variant: tall
   enabled: true
 
-- image: /sketches/yerba_buena.jpeg
+- image: /scrapbook/yerba_buena.jpeg
   alt: "Yerba Buena Center for the Arts"
   note: "Downtown San Francisco, CA"
   variant: float
   enabled: true
 
-- image: /sketches/saint_frank.jpeg
+- image: /scrapbook/saint_frank.jpeg
   alt: "Saint Frank Coffee"
   note: "Russian Hill, San Francisco, CA"
   variant: tilt-right

@@ -11,7 +11,7 @@
     {{ end }}
   </header>
 
-  {{ $all := site.Data.sketches | default (slice) }}
+  {{ $all := site.Data.scrapbook | default (slice) }}
   {{ $visible := where $all "enabled" "ne" false }}
 
   {{ if gt (len $visible) 0 }}

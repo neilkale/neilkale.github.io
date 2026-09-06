@@ -1,3 +1,21 @@
+{{ if eq .Params.atmosphere "monsoon" }}
+  <div class="monsoon-clouds" aria-hidden="true">
+    <img
+      class="monsoon-clouds__animation"
+      src="{{ "monsoon/clouds.gif" | relURL }}"
+      alt=""
+      decoding="async"
+    />
+  </div>
+  <canvas
+    class="monsoon-rain"
+    data-monsoon-rain
+    data-rain-delay="2400"
+    aria-hidden="true"
+  ></canvas>
+  <script defer src="{{ "js/monsoon-atmosphere.js" | relURL }}"></script>
+{{ end }}
+
 {{ if .IsHome }}
   {{/* Animal overlays revealed once the page has settled */}}
   <div
@@ -171,4 +189,3 @@
   })();
   </script>
 {{ end }}
-

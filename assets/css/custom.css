@@ -1,3 +1,11 @@
+:root {
+  --header-bottom-gap: var(--header-menu-top-gap);
+}
+
+.header-menu p {
+  margin-bottom: 0;
+}
+
 /* Custom footer background image */
 body {
   position: relative;
@@ -647,4 +655,10 @@ body.dark .sketch-card__tape {
 
 .sketch-card--wide .sketch-card__frame {
   padding-inline: clamp(1.1rem, 2vw, 1.75rem);
+}
+
+.poem p {
+  white-space: pre-wrap;
+  tab-size: 6;
+  line-height: 1.7;
 }

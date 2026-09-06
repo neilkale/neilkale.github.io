@@ -33,17 +33,19 @@ homeIntroContent = """
   <img class="home-portrait__img home-portrait__img--dark" src="/me_dark.png" alt="Sketch of Neil" loading="lazy" />
 </picture>
 
-I'm Neil Kale, a second-year Master's student in Machine Learning at [Carnegie Mellon University](https://www.ml.cmu.edu). I've also interned in the Safety, Evaluation, and Alignment Lab (SEAL) at [Scale AI](https://scale.com/research).
+I am a founding researcher at [Trajectory](https://trajectory.ai) and an incoming PhD student in the [Algorithmic Alignment Group](https://algorithmicalignment.csail.mit.edu/) at [MIT CSAIL](https://www.csail.mit.edu/). My research focuses on post-trainability and algorithms for continual learning: teaching ML models to adapt to distribution shift and learn new skills over time. 
 
-As a safety researcher, I'm optimistic about AI. There is a world where we wake up in American homes built in affordable cities, warmed by clean energy, ride e-bikes to high-speed rail stations, zipping from tight-knit communities into metropoles where we collaborate on social work, research, and art --- jobs that remain meaningful post-AGI. 
+In the past, I completed my Master’s degree at Carnegie Mellon University, advised by [Prof. Virginia Smith](https://www.cs.cmu.edu/~smithv/) and [Prof. Aditi Raghunathan](https://ar-forum.github.io/people.html). Prior to that, I studied CS and Mathematics at WPI, supervised by Randy Paffenroth. 
+
+As an AI researcher, I'm optimistic about the future. There is a world where we wake up in American homes built in affordable cities, warmed by clean energy, ride e-bikes to high-speed rail stations, zipping from tight-knit communities into metropoles where we collaborate on social work, research, and art. 
 
 This world is not a guarantee, and we will have to fight for it! I work on research that I hope will bring us closer to a safe, abundant future.
  
 ## What You'll Find Here
 
-- **[Posts](/posts)**: Occasional updates on projects, thoughts, and experiences
-- **[Research](/publications)**: Information about my current and past academic work  
-- **[Scrapbook](/scrapbook)**: Perspective drawings of cafes, parks, and old buildings
+- **[Posts](/posts)**: Non-academic and semi-academic writing.
+- **[Research](/publications)**: Highlights from my current and past academic work.  
+- **[Scrapbook](/scrapbook)**: Perspective drawings of cafes, parks, and street corners.
 
 Feel free to explore and connect with me through the links provided below.
 """

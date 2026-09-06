@@ -4,6 +4,7 @@ draft = false
 title = 'Monsoon'
 description = "A poem on aging, inspired by T.S. Eliot's 'Gerontion'."
 tags = []
+atmosphere = 'monsoon'
 +++
 
 {{< poem >}}

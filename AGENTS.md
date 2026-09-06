@@ -1,15 +1,4 @@
-# Environment
-
-Please ensure you are operating inside the `arcadia` conda environment before running any dev tasks.  
-You can activate the environment with:
-
-```bash
-conda activate arcadia
-```
-
-This will ensure all dev dependencies are consistent and available.
-
-# Other Notes
+# Notes
 
 To build the server for local development, use `hugo server --buildDrafts --buildFuture --disableFastRender`
 

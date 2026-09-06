@@ -22,13 +22,13 @@
       {{ $hasAwards := and $pub.awards (gt (len $pub.awards) 0) }}
       {{ if or $hasVenue $hasAwards }}
         <p class="publication-venue">
-          {{ with $pub.venue }}{{ . }}{{ end }}
-          {{ if and $hasVenue $hasAwards }}, {{ end }}
-          {{ if $hasAwards }}
-            {{ range $i, $award := $pub.awards }}
-              {{ if $i }}, {{ end }}<em>{{ $award }}</em>
-            {{ end }}
-          {{ end }}
+          {{- with $pub.venue }}{{ . }}{{ end -}}
+          {{- if and $hasVenue $hasAwards }}, {{ end -}}
+          {{- if $hasAwards -}}
+            {{- range $i, $award := $pub.awards -}}
+              {{- if $i }}, {{ end -}}<em class="publication-award publication-award--{{ $award | urlize }}">{{ $award }}</em>
+            {{- end -}}
+          {{- end -}}
         </p>
       {{ end }}
     </div>

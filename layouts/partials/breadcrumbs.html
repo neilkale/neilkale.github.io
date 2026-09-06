@@ -1,4 +1,5 @@
-{{- if .Site.Params.breadcrumbs.enabled -}}
+{{- $topLevel := or .IsHome (and .Parent .Parent.IsHome) -}}
+{{- if and .Site.Params.breadcrumbs.enabled (not $topLevel) -}}
 {{- $breadcrumbs := .Site.Params.breadcrumbs -}}
 <div class="breadcrumbs">
     {{- range $i, $v := .Ancestors.Reverse -}}

@@ -14,11 +14,29 @@
     - "Paula Rodriguez"
     - "Christina Q Knight"
     - "Zifan Wang"
-  venue: "Under review at ICLR 2026"
-  awards: []
+  venue: "ICLR 2026"
+  awards: [Oral]
   code: ""
   abstract: >
     We stress test monitoring systems for detecting covert misbehavior in LLM agents (e.g., secretly exfiltrating data). We propose a monitor red teaming (MRT) workflow that varies agent and monitor awareness, adversarial evasion strategies, and evaluation across tool-calling (SHADE-Arena) and computer-use (CUA-SHADE-Arena) environments. We benchmark standard monitor scaffoldings and introduce a hybrid hierarchical--sequential design. Our work positions MRT as a standard workflow for stress-testing oversight, revealing robustness gaps in both LLM- and human-based monitoring. We release code, data, and logs to support further research.
+
+- enabled: true
+  title: "Position: Preventing AI-Generated CSAM Necessitates New Approaches to AI Safety"
+  url: "https://arxiv.org/abs/2607.05407"
+  authors:
+    - "**Neil Kale\\***"
+    - "Rebecca Portnoff*"
+    - "Pratiksha Thaker"
+    - "Michael Simpson"
+    - "Robertson Wang"
+    - "Kevin Kuo"
+    - "Chhavi Yadav"
+    - "Virginia Smith"
+  venue: "ICML 2026"
+  awards: [Spotlight]
+  code: ""
+  abstract: >
+    Modern AI systems present profound new risks to child safety: AI is increasingly misused to create AI-generated child sexual abuse material, facilitate child sexual exploitation, and reduce barriers to harm. We argue that protecting children from AI-facilitated sexual abuse requires new approaches to AI safety, because existing techniques assume data accessibility, transparency, and evaluation practices that are incompatible with the ethical and legal constraints surrounding this material. We examine the resulting technical challenges (limits on dataset auditing, red teaming, and fine-tuning prevention), outline 15 open problems across the AI development lifecycle, and propose targeted recommendations for researchers, developers, and policymakers.
 
 - enabled: true
   title: "Membership Inference Attacks for Unseen Classes"
@@ -28,7 +46,7 @@
     - "**Neil Kale\\***"
     - "Zhiwei Steven Wu"
     - "Virginia Smith"
-  venue: "Under review at ICLR 2026"
+  venue: "ICML 2026"
   awards: []
   code: ""
   abstract: >
@@ -41,7 +59,7 @@
     - "Chen Henry Wu*"
     - "**Neil Kale\\***"
     - "Aditi Raghunathan"
-  venue: "Conference on Language Models 2025"
+  venue: "CoLM 2025"
   awards: []
   code: ""
   abstract: >

@@ -13,7 +13,7 @@ This will ensure all dev dependencies are consistent and available.
 
 To build the server for local development, use `hugo server --buildDrafts --buildFuture --disableFastRender`
 
-To add publications, look at `data/publications.yaml`. To add posts, directly add leaf folders to `content/posts`.
+To add publications, look at `data/publications.yaml`. To add posts, directly add leaf folders to `content/posts`. The scrapbook gallery (`/scrapbook`) is driven by `data/scrapbook.yaml` with images in `static/scrapbook/`; `dev/sketch_correction/` prepares those images from phone photos.
 
 This website builds on Hugo's Typo theme. Never modify `/themes/typo/` unless specifically instructed to do so. Create overrides in the appropriate places instead.
 

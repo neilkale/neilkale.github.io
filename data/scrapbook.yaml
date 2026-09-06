@@ -2,14 +2,15 @@
 # - image (required): path under /static or an absolute URL
 # - alt (optional): accessible description
 # - note (optional): small caption that shows under the sketch
-# - variant (optional): style hint (tilt-left, tilt-right, float, tall, wide)
+# - variant (optional): style hints, space-separated (tilt-left, tilt-right, float, tall, wide)
 # - enabled (optional): set to false to temporarily hide the entry
 #
 # Example entries (disabled by default so they stay hidden until replaced):
-- image: /scrapbook/painted_ladies.jpeg
-  alt: "Painted Ladies"
+
+- image: /scrapbook/filter_coffee.jpeg
+  alt: "Le Mils Cafe"
   note: "Nob Hill, San Francisco, CA"
-  variant: tilt-left
+  variant: tilt-right
   enabled: true
 
 - image: /scrapbook/social_study.jpeg
@@ -28,4 +29,46 @@
   alt: "Saint Frank Coffee"
   note: "Russian Hill, San Francisco, CA"
   variant: tilt-right
+  enabled: true
+
+- image: /scrapbook/st_frank_street.jpeg
+  alt: "Saint Frank Coffee "
+  note: "Russian Hill, San Francisco, CA"
+  variant: float
+  enabled: true
+
+- image: /scrapbook/cheese_plus.jpeg
+  alt: "Cheese Plus Deli"
+  note: "Russian Hill, San Francisco, CA"
+  variant: tilt-left
+  enabled: true
+
+- image: /scrapbook/unbound_books.jpeg
+  alt: "Unbound Book Store"
+  note: "Chinatown, San Francisco, CA"
+  variant: tilt-right
+  enabled: true
+
+- image: /scrapbook/dragonflies_alamo_square.jpeg
+  alt: "Dragonflies at Alamo Square"
+  note: "Alamo Square, San Francisco, CA"
+  variant: float
+  enabled: true
+
+- image: /scrapbook/bon_nene.jpeg
+  alt: "Bon Nene Cafe"
+  note: "Mission District, San Francisco, CA"
+  variant: tilt-left
+  enabled: true
+
+- image: /scrapbook/shibam_coffee.jpeg
+  alt: "Shibam Coffee"
+  note: "Pittsburgh, PA"
+  variant: float
+  enabled: true
+
+- image: /scrapbook/painted_ladies.jpeg
+  alt: "Painted Ladies"
+  note: "Nob Hill, San Francisco, CA"
+  variant: tilt-left
   enabled: true

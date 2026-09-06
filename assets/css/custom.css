@@ -297,6 +297,17 @@ body.dark .publication-card {
   font-size: 0.95em;
 }
 
+.publication-award {
+  font-weight: 600;
+  color: #6b6d2f;
+}
+.publication-award--spotlight { color: #2f4b6e; }
+.publication-award--oral      { color: #a3412d; }
+
+body.dark .publication-award            { color: #b9b86a; }
+body.dark .publication-award--spotlight { color: #8fb1d4; }
+body.dark .publication-award--oral      { color: #e08a72; }
+
 .publication-links {
   display: flex;
   gap: 1rem;

@@ -25,7 +25,7 @@ hideHeader = false
 headerSubtitle = '(नील काळे)'
 
 # Intro on main page, content is markdown
-homeIntroTitle = 'Hi!'
+homeIntroTitle = ''
 homeIntroContent = """
 
 <picture class="home-portrait home-portrait--dual">

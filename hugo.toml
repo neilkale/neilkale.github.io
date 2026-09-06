@@ -61,7 +61,7 @@ listDateFormat = 'Jan 2006'
 
 # Breadcrumbs
 [params.breadcrumbs]
-enabled = true
+enabled = false
 showCurrentPage = true
 home = "Home"
 

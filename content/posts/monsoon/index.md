@@ -23,7 +23,7 @@ which strong men have afforded to our time.
 I am rain, and I shall pass, 
 never bothering, never wanting,
 
-pitter			patter			pitter			patter
+pitter        patter        pitter        patter
 
 Stagnant Iteru, 
 the dry season nears its close.
@@ -37,7 +37,7 @@ a thousand tranquilities.
 "Of course, not a problem."
 "Shall I lie over and turn rubber mat?" 
 
-pitter			patter			pitter			patter
+pitter        patter        pitter        patter
 
 Mercurial currents rise beneath.
 Omnia mutantur, nihil interit.
@@ -51,7 +51,7 @@ bow inwards under Sisyphean load.
 At the city walls, young men plug the dyke,
 fingers of Atlas, accusing the river.
 
-pitter			patter			pitter			patter
+pitter        patter        pitter        patter
 
 Iteru does what it has always done,
 in these tranquil times of weak men.

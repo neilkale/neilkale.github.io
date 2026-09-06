@@ -1,5 +1,5 @@
 +++
-date = '2026-09-05T19:17:00'
+date = '2026-08-05T19:17:00'
 draft = true
 title = 'Paradise Found'
 description = "A short essay on freedom to dream, inspired by the Arabian Nights."

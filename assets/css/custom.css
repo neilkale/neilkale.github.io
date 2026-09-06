@@ -235,6 +235,10 @@ body.dark .header .header-subtitle {
   }
 }
 
+body.kind-section main h1 {
+  display: none;
+}
+
 .publications-container {
   display: block;
 }

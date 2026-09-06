@@ -1,0 +1,123 @@
+% Neil Kale - CV. Build with dev/cv/build.sh (writes static/cv.pdf).
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{libertine}
+\usepackage[margin=0.5in]{geometry}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+
+\definecolor{wordlink}{HTML}{0563C1}
+\hypersetup{colorlinks=true,urlcolor=wordlink,linkcolor=wordlink}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\raggedbottom
+
+% Body text: 10pt on 11.5pt leading (matches the Word line pitch)
+\renewcommand{\normalsize}{\fontsize{10}{11.5}\selectfont}
+\normalsize
+
+% ---- Building blocks -------------------------------------------------------
+% Section heading: bold title with a rule beneath it
+\newcommand{\cvsection}[1]{%
+  \vspace{6.5pt}%
+  {\bfseries #1}\par
+  \vspace{1.2pt}\hrule\vspace{11.6pt}}
+
+% Left/right pair on one line (e.g. institution and location, degree and date)
+\newcommand{\lr}[2]{\noindent #1\hfill #2\par}
+
+% Space between entries within a section
+\newcommand{\entrygap}{\vspace{5.8pt}}
+
+% Underlined hyperlink, Word style
+\newcommand{\wlink}[2]{\href{#1}{\uline{#2}}}
+
+% Publication list: 12pt leading, no hanging indent, like the original.
+% Optional argument = space above the group title (the first group sits right under the rule).
+\newenvironment{pubgroup}[2][5.5pt]{%
+  \vspace{#1}{\itshape #2}\par\vspace{0.5pt}%
+  \fontsize{10}{12}\selectfont}{\par}
+\newcommand{\pub}[2]{[#1] #2\par}
+
+\begin{document}
+
+% ---- Header ----------------------------------------------------------------
+\begin{center}
+  {\fontsize{16}{18.3}\selectfont\bfseries Neil Kale}\par
+  \vspace{2.8pt}
+  \wlink{mailto:nkale@cs.cmu.edu}{nkale@cs.cmu.edu} | (508) 936-3455 |
+  \wlink{https://neilkale.github.io}{neilkale.github.io} |
+  \wlink{https://www.linkedin.com/in/neil-kale/}{www.linkedin.com/in/neil-kale/}
+\end{center}
+\vspace{-1pt}
+
+% ---- Education -------------------------------------------------------------
+\cvsection{Education}
+
+\lr{\textbf{Massachusetts Institute of Technology (MIT)}}{\textbf{Cambridge, MA}}
+\lr{\textbf{Doctor of Philosophy} in Electrical Engineering and Computer Science}{Incoming, February 2027}
+\textbf{Advisor} Prof.\ Dylan Hadfield-Menell\par
+
+\entrygap
+\lr{\textbf{Carnegie Mellon University (CMU)}}{\textbf{Pittsburgh, PA}}
+\lr{\textbf{Master of Science} in Machine Learning}{December 2025}
+\textbf{GPA} 4.24/4.0\par
+\textbf{Advisors} Prof.\ Virginia Smith, Prof.\ Aditi Raghunathan\par
+\textbf{Committee Service} MSML Admissions Committee, MSML Social Committee, SCS Master's Advisory Committee\par
+
+\entrygap
+\lr{\textbf{Worcester Polytechnic Institute (WPI)}}{\textbf{Worcester, MA}}
+\lr{\textbf{Bachelor of Science} in Computer Science, \textbf{2\textsuperscript{nd} Major} in Mathematics, \textbf{Minor} in Robotics Engineering}{May 2024}
+\textbf{GPA} 4.0/4.0\par
+\textbf{Awards and Activities} Graduation with High Distinction\textbf{,} Men's Varsity Rowing\par
+
+% ---- Selected Publications -------------------------------------------------
+\cvsection{Selected Publications}
+
+\begin{pubgroup}[-4.7pt]{AI Safety and Oversight}
+\pub{1}{\textbf{Kale, N.}, Zhang, C. B. C., Zhu, K., Aich, A., Rodriguez, P., Knight, C. Q., \& Wang, Z. (2026). Reliable Weak-to-Strong Monitoring of LLM Agents. In \textit{International Conference on Learning Representations (ICLR)}. \textbf{Oral.}}
+\pub{2}{\textbf{Kale, N.*}, Portnoff, R.*, Thaker, P., Simpson, M., Wang, R., Kuo, K., Yadav, C., \& Smith, V. (2026). Position: Preventing AI-Generated CSAM Necessitates New Approaches to AI Safety. In \textit{International Conference on Machine Learning (ICML)}. \textbf{Spotlight.}}
+\pub{3}{Wu, C. H.*, \textbf{Kale, N.*}, \& Raghunathan, A. (2025). Mitigating modal imbalance in multimodal reasoning. In \textit{Conference on Language Modeling (CoLM)}.}
+\end{pubgroup}
+
+\begin{pubgroup}{Privacy and Auditing}
+\pub{4}{Thaker, P.*, \textbf{Kale, N.*}, Wu, Z. S., \& Smith, V. (2026). Membership Inference Attacks for Unseen Classes. In \textit{International Conference on Machine Learning (ICML)}.}
+\pub{5}{Thaker, P., Hu, S., \textbf{Kale, N.}, Maurya, Y., Wu, Z. S., \& Smith, V. (2025). Position: LLM unlearning benchmarks are weak measures of progress. In \textit{IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)} (pp. 520-533).}
+\end{pubgroup}
+
+% ---- Industry Experience ---------------------------------------------------
+\cvsection{Industry Experience}
+
+\lr{\textbf{Trajectory}}{February 2026 -- Present}
+\textit{Founding Member of Technical Staff}\par
+Second employee at Trajectory, developing algorithms and infrastructure for continual learning.\par
+
+\entrygap
+\lr{\textbf{Scale AI} (Hosted by \textbf{Christina Knight})}{October 2025 - January 2026}
+\textit{Security and Policy Research Lab Fellow}\par
+Engaged with global policymakers to solve real-world problems in agent robustness, AI control, and frontier risk evaluation.\par
+
+\entrygap
+\lr{\textbf{Scale AI} (Hosted by \textbf{Sail Wang} \& \textbf{Julian Michael})}{May 2025 - August 2025}
+\textit{SEAL Research Scientist Intern}\par
+Developed novel chain-of-thought monitoring techniques to oversee superhuman agents with weaker LLM monitors; first-author paper accepted as an oral at ICLR 2026.\par
+
+\entrygap
+\textbf{GoDaddy Inc (}Hosted by \textbf{Harsh Nilesh Pathak)}\par
+\lr{\textit{Machine Learning Scientist Intern}}{May 2024 - August 2024}
+Built GoDaddy's first agentic pipeline for CRM and prototyped an early agentic chatbot.\par
+
+% ---- Teaching --------------------------------------------------------------
+\cvsection{Teaching}
+
+Teaching Assistant for 10701 Introduction to Machine Learning (CMU), CS541 Deep Learning (WPI)\par
+
+\end{document}
